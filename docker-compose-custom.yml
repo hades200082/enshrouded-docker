@@ -7,10 +7,15 @@ services:
     environment:
       TZ: "Europe/London"
       NAME: "Wildkatz"
+      UPDATE_ON_START: "true"
       AUTO_UPDATE: "true"
       AUTO_UPDATE_SCHEDULE: "0 3 * * *"
       SCHEDULED_RESTART: "true"
       SCHEDULED_RESTART_SCHEDULE: "0 4 * * *"
+      SLOT_COUNT: "6"
+      VOICE_CHAT_MODE: "Proximity"
+      ENABLE_VOICE_CHAT: "false"
+      ENABLE_TEXT_CHAT: "false"
       # Game Settings Overrides (optional)
       PLAYER_HEALTH_FACTOR: "1.0"
       PLAYER_MANA_FACTOR: "1.0"
